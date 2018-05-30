@@ -5,14 +5,15 @@ class Myform extends React.Component{
         super(props);
         this.state={mystate:{}}
     }
+    
     handleChangle = e => {
         let {mystate} = this.state;
         mystate[e.target.name] = e.target.value;
-        this.setState({mystate})
+        this.setState({mystate});
+        
     }
-    handleClick = e => {
-        console.log('click');
-        this.props.Getinput()
+    handleClick = e => {   
+        this.props.getInput(this.state.mystate);
     }
     render(){
         return(
@@ -20,8 +21,8 @@ class Myform extends React.Component{
                 <input name='age' onChange = {e => {this.handleChangle(e)}}></input>
                 <br />
                 <input name='income' onChange = {e => {this.handleChangle(e)}}></input>
-                <br />
                 <button onClick={this.handleClick}>Submit</button>
+                <br />
             </div>
         )
     }
