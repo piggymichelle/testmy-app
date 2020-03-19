@@ -6,6 +6,8 @@ const Myarea = props => {
             <p>apple</p>
             <p>banana</p>
             <p>cisco</p>
+            <p>change2</p>
+            <p>change3</p>
             <h1>{props.nameList}</h1>
             <h1>{props.ageList}</h1>
         </div>);
