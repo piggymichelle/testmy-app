@@ -19,7 +19,7 @@
     "build": "npm-run-all build-css build-js"
   },
   "devDependencies": {
-    "node-sass": "^4.9.0",
+    "node-sass": "^7.0.0",
     "sass-loader": "^7.0.1"
   }
 }
